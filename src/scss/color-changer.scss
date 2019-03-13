@@ -1,0 +1,39 @@
+#color-changer{
+        width: 800px;
+        margin: 10px auto;
+        div.color{
+                width:20%;
+                height: 10px;
+                float:left;
+                cursor:pointer;
+                &.Crimson{
+                        background-color:Crimson;
+                }
+                &.DarkGreen{
+                        background-color:DarkGreen;
+                }
+                &.Tan{
+                        background-color:Tan;
+                }
+                &.CornSilk{
+                        background-color:CornSilk;
+                }
+                &.DarkOrange{
+                        background-color:DarkOrange;
+                }
+        }
+        div:last-child{
+                clear:both;
+        }
+}
+#color-changer:after{
+        content:"";
+        display:table;
+        clear:both;
+}
+.small{
+        margin-top: 10px;
+        font-size:x-small;
+        color: #CCCCCC;
+        font-family:geneva, sans-serif;
+}

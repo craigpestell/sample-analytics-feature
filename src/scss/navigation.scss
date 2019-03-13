@@ -1,0 +1,33 @@
+nav{
+        background-color: #000;
+        width: 100%;
+        #navigation{
+                background-color: #000;
+                display:flex;
+                width: 800px;
+                margin: 0px auto;
+                li{
+                        padding: 10px;
+                        list-style:none;
+                        font-family: tahoma, sans-serif;
+                        text-align:center;
+                        flex-grow:1;
+                        a{
+                                text-decoration:none;
+                                color:#fff;
+                        }
+                        &:hover{
+                                a{
+                                        color:#fff;
+                                }
+                                background-color: #666;
+                        }
+                        &.selected{
+                                color: white;
+                                background-color: #444;
+                        }
+                }
+        }
+}
+
+ 

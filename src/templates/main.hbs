@@ -1,0 +1,19 @@
+{{!--
+This file is used by the server-side renderer on every page request.
+It will render with the context set server-side by req.locals.context.
+Since this is a feature, this file is never used in a production environment, and is never published to npm.
+The javascript for the application will execute after this initial DOM has been rendered.
+--}}
+
+{{!--
+The views in this example scaffold use Marionette ItemView, which renders collection data as "items".
+In order to use the same partial as the client-side view, put each array context into "items"
+--}}
+
+<nav>{{> navigation items=navigation}}</nav>
+
+<div id="wrapper">
+    <div id="{{id}}">{{> (lookup . 'id') items=(lookup . id)}}</div>
+</div>
+
+{{> color-changer}}

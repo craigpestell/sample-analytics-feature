@@ -1,0 +1,11 @@
+<section class="benefits">
+    <h2>Benefits</h2>
+    {{#each items}}
+        <h3>{{title}}</h3>
+        <ul class="list">
+            {{#each list}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    {{/each}}
+</section>

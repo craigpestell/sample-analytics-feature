@@ -1,0 +1,66 @@
+@import '~@core/style-guide/src/scss/macys-base.scss';
+@import '~@core/style-guide/src/scss/mcom-sprites.scss';
+
+body{
+        &.Crimson{
+                background: rgba(237,20,61,0.2);
+        }
+        &.DarkOrange{
+                background: rgba(255,140,0,0.2);
+        }
+        &.DarkGreen{
+                background: rgba(0,100,0,0.2);
+        }
+        &.Tan{
+                background: rgba(210,180,140,0.2);
+        }
+        &.CornSilk{
+                background: rgba(255,248,220,0.2);
+        }
+        & > div:last-child{
+                width: 800px;
+                margin: 20px auto;
+        }
+        .clear{
+                clear:both;
+        }
+}
+
+body{
+        div{
+                font-family:arial, sans-serif;
+                font-size:small;
+        }
+
+        .small, #samplePartial{
+                width: 800px;
+                margin: 10px auto;
+                & > b{
+                        float:left;
+                        font-size:xx-small;
+                        letter-spacing:2px;
+                        color: #666666;
+                }
+                & > div{
+                        float:right;
+                        font-size:xx-small;
+                        color: #666666;
+                }
+                &:after{
+                        clear:both;
+                        content:"";
+                        display:table;
+                }
+        }
+
+        h3{
+                margin-left: 0px;
+                margin-bottom: 5px;
+                margin-top: 40px;
+        }
+        ul{
+                margin-bottom: 0px;
+                margin-top: 5px;
+                margin-left: 20px;
+        }
+}

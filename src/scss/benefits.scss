@@ -1,0 +1,15 @@
+#benefits{
+        width: 800px;
+        margin:0px auto;
+        & > div:last-child{
+                min-height:50px;
+                margin:0px auto;
+                & > section > ul.list{
+                        line-height:20px;
+                        list-style:none;
+                        & > li{
+                                margin-left: 20px;
+                        }
+                }
+        }
+}

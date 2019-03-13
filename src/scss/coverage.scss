@@ -1,0 +1,13 @@
+#coverage{
+        #coverageHolder p{
+                width: 800px;
+                font-size: 200%;
+                margin:0px auto;
+                padding: 10px;
+                &.shell{
+                        background-color: #DDD;
+                        font-family:monospace;
+                        font-size: 150%;
+                }
+        }
+}

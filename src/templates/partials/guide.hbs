@@ -1,0 +1,17 @@
+<section class="guide">
+    <h2>Guide</h2>
+    {{#each items}}
+        <h3>{{title}}</h3>
+        {{#each code}}
+            {{#if comments}}
+                <div class="code-desc">{{{comments}}}</div>
+            {{/if}}
+            {{#if cmd}}
+                <div class="code">{{{cmd}}}</div>
+            {{/if}}
+            {{#if image}}
+                <img src="{{image}}" />
+            {{/if}}
+        {{/each}}
+    {{/each}}
+</section>
