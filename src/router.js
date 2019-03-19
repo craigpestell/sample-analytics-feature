@@ -7,5 +7,6 @@ export default ({ mount }) => Backbone.Router.extend({
     benefits: () => import('./js/views/benefits').then(module => mount('benefits', module.default)),
     guide: () => import('./js/views/guide').then(module => mount('guide', module.default)),
     coverage: () => import('./js/views/coverage').then(module => mount('coverage', module.default)),
+    analytics: () => import('./js/views/analytics').then(module => mount('analytics', module.default)),
   },
 });

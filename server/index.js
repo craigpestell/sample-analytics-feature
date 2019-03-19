@@ -27,6 +27,7 @@ app.get('/', (req, res) => {
  */
 app.get('/benefits', server.jsonProxy({ host: process.env.XAPI_HOST, url: '/xapi/custom-benefits-endpoint', propPath: 'benefits' }));
 app.get('/guide', server.jsonProxy({ host: process.env.XAPI_HOST, url: '/xapi/custom-guide-endpoint', propPath: 'guide' }));
+app.get('/analytics', server.jsonProxy({ host: process.env.XAPI_HOST, url: '/xapi/custom-analytics-endpoint', propPath: 'analytics' }));
 
 /**
  * Examples of using server.jsonProxy to make a request to an external API (i.e. xAPI), then respond with the JSON result.
@@ -35,6 +36,7 @@ app.get('/guide', server.jsonProxy({ host: process.env.XAPI_HOST, url: '/xapi/cu
 app.get('/xapi/custom-navigation-endpoint', server.jsonProxy({ host: process.env.XAPI_HOST, completeRequest: true }));
 app.get('/xapi/custom-benefits-endpoint', server.jsonProxy({ host: process.env.XAPI_HOST, completeRequest: true }));
 app.get('/xapi/custom-guide-endpoint', server.jsonProxy({ host: process.env.XAPI_HOST, completeRequest: true }));
+app.get('/xapi/custom-analytics-endpoint', server.jsonProxy({ host: process.env.XAPI_HOST, completeRequest: true }));
 
 /**
  * An example of using server-side rendering for all routes.

@@ -1,0 +1,28 @@
+<section class="analytics">
+    <h2>Analytics</h2>
+    {{#each items}}
+        <h3>{{title}}</h3>
+        <ul class="list">
+            {{#each list}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    {{/each}}
+    <ul>
+        <li>
+            <label for="cta-primary">Call To Action</label>
+            <button name="cta-primary" class="cta-primary">Click me</button>
+        </li>
+        <li>
+            <label for="product">Product data example</label>
+            <button name="product" class="track track-product">Click me</button>
+        </li>
+    </ul>
+
+</section>
+
+sample-component-section:<br/>
+<section class="sample-component-section">
+    sample-component:<br/>
+    <div class="sample-component"></div>
+</section>
